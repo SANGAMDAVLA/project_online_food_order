@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+
+:root {
+    --bodybg: #FFFFFF;
+    --bg: #2E8B57;
+    --headingBg: #FFD700;
+    --textcolor: #FFFFFF;
+    --hoverColor: #ff6347;
+    --headingText: #2E8B57;
+    --boxbg: #f2f2f2;
+    --menubtnhover: #F08080;
+    --oddtab: #3CB371;
+    --tdcolor: #333333;
+    --th: #820000;
+}
+
+
+h1 {
+    display: block;
+    text-align: center;
+
+    color: var(--headingText);
+    background-color: var(--headingBg);
+
+
+}
+
+button#clearCartButton {
+    background-color: var(--hoverColor);
+    color: var(--textcolor);
+}
+
+button#clearCartButton:hover {
+    background-color: var(--menubtnhover);
+}
+
+a {
+
+    color: var(--textcolor);
+
+}
+
+nav a:hover {
+    color: var(--hoverColor);
+}
+
+
+nav {
+    background-color: var(--bg);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+
+.nav_left li {
+    float: left;
+    padding: 14px 16px;
+
+    overflow: hidden;
+}
+
+
+
+.nav_right li {
+    float: right;
+    padding: 14px 10px;
+
+
+}
+/* ---------- */
+ #slider {
+    background-image: url(resource/img/g1.png);
+     text-align: center;
+     background-position: center;
+     display: inline-block;
+     background-size: cover;
+     width: 100%;
+     min-height: 59vh;
+     border-radius: 20px;
+
+
+
+ }
+/* --------- */
+header {
+    position: relative;
+
+   
+}
+
+header a {
+    position: absolute;
+    top: 50%;
+    color: var(--textcolor);
+    background-color: var(--hoverColor);
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+header a:hover {
+    background-color: var(--menubtnhover);
+}
+
+.pre {
+    left: 0%
+}
+
+.next_s {
+    right: 0%;
+}
+
+
+.column {
+
+    min-height: 150px;
+    width: 35%;
+    padding: 8px;
+    background-color: var(--boxbg);
+    border-radius: 14px;
+    margin: auto;
+    text-align: center;
+  
+}
+
+.column p{
+    line-height:24px ;
+}
+.noFloat {
+    clear: both;
+}
+
+.test {
+    display: block;
+}
+/* --------- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-heading {
+    background-color: var(--headingBg);
+    color: var(--headingText);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.about-content p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.about-content {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 12px;
+    line-height: 1.6;
+    color: var(--tdcolor);
+    background-color: var(--boxbg);
+    border-radius: 12px;
+}
+/* --------- */
+button {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: var(--bg);
+    color: var(--textcolor);
+    display: inline-block;
+}
+
+button:hover {
+    background-color: var(--hoverColor);
+}
+
+button#reset:hover {
+    background-color: var(--th);
+    color: var(--textcolor);
+
+}
+
+input {
+    resize: none;
+    height: 25px;
+    background-color: var(--bodybg);
+
+    color: var(--tdcolor);
+
+}
+
+::placeholder {
+    text-align: center;
+}
+
+
+form label {
+
+    color: var(--hoverColor);
+    font-weight: bold;
+    display: block;
+    margin: 10px 0px;
+
+}
+
+textarea,
+form input {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 85%;
+    display: block;
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+textarea {
+    background-color: var(--bodybg);
+
+    color: var(--tdcolor);
+}
+
+.form_style {
+    margin-top: 20px;
+    width: 400px;
+    border-radius: 12px;
+    background-color: var(--boxbg);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_bg {
+
+    height: 130vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resource/img/bg_login.jfif");
+
+}
+
+.form_contact {
+
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resource/img/bg_contact\ us.jfif");
+
+}
+
+
+
+.product_gallery {
+    margin: 1%;
+    position: relative;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+
+}
+
+.product_gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.product_gallery button {
+
+    width: 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    bottom: 0%;
+    transition: .5s ease;
+}
+
+.product_gallery:hover .overlay {
+    height: 12%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 090%;
+    margin: auto;
+    /* position: absolute; */
+}
+
+td,
+th {
+
+    text-align: center;
+    padding: 8px;
+
+}
+
+th {
+    color: var(--textcolor);
+    background-color: #820000;
+
+}
+
+tr:nth-child(odd) {
+    background-color: var(--bg);
+    color: var(--textcolor);
+}
+
+tr:nth-child(even) {
+    color: var(--tdcolor);
+
+}
+
+main table button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: var(--hoverColor);
+    color: var(--textcolor);
+    display: inline-block;
+}
+
+main table button:hover {
+    background-color: var(--menubtnhover);
+}
+
+/* ---------------------------------------------- */
+.sidenav {
+    height: 90%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--boxbg);
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 60px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#cart-items li {
+    padding: 5px;
+    margin-left: 15%;
+    list-style-type: decimal-leading-zero;
+    color:var(--tdcolor);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--tdcolor);
+    display: block;
+
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--hoverColor);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* ---------------------------------- */
+.accordion {
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 18px;
+    padding-left: 35px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    color: var(--textcolor);
+
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+.accordion:nth-child(2n+1) {
+
+    background-color: var(--oddtab);
+
+}
+
+div.accordion:nth-child(3n-2) {
+
+    background-color: #820000;
+
+}
+
+
+.panel {
+
+    padding: 0 18px;
+
+    display: none;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+
+}
+
+#output {
+
+    display: block;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+
+
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    margin: auto;
+}
+
+#adOption {
+
+    color: #F2DEBA;
+    font-weight: bold;
+    display: block;
+    width: 25%;
+    background-color: #4E6C50;
+
+    border-radius: 12px;
+    padding: 20px;
+    margin: auto;
+
+
+
+}
+
+
+
+#adOption input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    width: 20px;
+    margin-bottom: 2px;
+}
+
+#adOption input {
+    border-radius: 5px;
+    border: none;
+}
+
+#tipI,
+#coupI,
+#person {
+    text-align: center;
+    float: right;
+    width: 30%;
+    margin-bottom: 2px;
+}
+
+#cartEmpty {
+    width: 50%;
+
+    background-color: #F2DEBA;
+    border-radius: 12px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.footer {
+    display: block;
+    background-color: var(--bg);
+    padding: 35px;
+
+    background-size: contain;
+    padding-bottom: 0%;
+    /* text-align: center; */
+
+}
+
+.footertext {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+footer img {
+    display: inline;
+    padding: 5px;
+
+
+}
+
+footer .hide {
+    display: none;
+}
+
+
+
+footer button {
+    position: relative;
+    left: 70%;
+    border-radius: 25px;
+    bottom: 20px;
+    height: 61px;
+    background-color: var(--hoverColor);
+}
+
+footer button:hover {
+    background-color: var(--menubtnhover);
+}
+
+h2 {
+    color: var(--bg)
+}
+
+h3,
+p {
+    color: var(--tdcolor)
+}
+
+#icon {
+    float: left;
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline;
+    color: var(--textcolor)
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 250%;
+
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .fb {
+    background-color: rgb(24, 119, 242);
+
+
+}
+
+.tooltip .insta {
+    /* background-color: red; */
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+
+}
+
+.tooltip .whatsapp {
+    background-color: lightgreen;
+
+}
+
+.tooltip .linkd {
+    background-color: #007bb5;
+
+}
+
+.tooltip .youtube {
+    background-color: red;
+
+}
+
+.tooltip .x {
+    background-color: rgb(85, 172, 238);
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+small {
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+}
+
+
+.mode-containt {
+    display: none;
+    position: fixed;
+    
+}
+.mode{
+    cursor: pointer;
+    color: var(--textcolor);
+}
+.mode-containt button{
+    display: block;
+    border-radius: 12px;
+}
+
+
+
+.mode:hover  .mode-containt{
+    display: block;
+}
+.dark-mode {
+    background-color: #262626;
+    --bodybg: #262626;
+    --bg: #1F693F;
+    --headingBg: #E1C50F;
+    --hoverColor: #FFA07A;
+    --headingText: #FFFFFF;
+    --boxbg: #303030;
+    --oddtab: #557E55;
+    --tdcolor: white;
+}
+
+/* -------------------- */
+.hide{
+    display: none;
+}
+#storeList button{
+    padding: 2px;
+}

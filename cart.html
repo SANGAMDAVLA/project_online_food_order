@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="check-list-icon-clipart-7.jpg" type="image/x-icon">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <script src="script.js"></script>
+
+    <title>Product</title>
+
+</head>
+
+<body onload="cart()">
+    <nav>
+        <ul class="nav_left">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="menu.html">
+                    menu
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <ul class="nav_right">
+            <li>
+                <a href="cart.html">
+                    My Order
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">Login </a>
+                <!--sign up icon-->
+            </li>
+
+            <li class="mode">Mode
+                <div class="mode-containt">
+                    <button type="button" onclick="lightMode()">light mode</button>
+                    <button type="button" onclick="darkMode()">Dark mode</button>
+                </div>
+                </div>
+
+        </ul>
+    </nav>
+    <div id="up"></div>
+    <div class="cart_background">
+        <h1 class="center">Cart</h1>
+
+        <div id="cartEmpty">
+            <h1>Cart Empty</h1>
+            <img class="img" src="emptycart.png" alt="empty">
+
+
+        </div>
+        <div id="myOrder">
+            <table id="storeList">
+                <thead id="tableHead">
+                    <tr>
+                        <th>S.no</th>
+                        <th>item</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+
+            <br>
+
+            <div id="output"></div>
+            <br>
+            <div id="adOption">
+                <button id="clearCartButton">clean Cart</button>
+                <button id="buyButton" onclick="buy()">Buy Now</button><br>
+                <input id="isOption" type="checkbox">
+                <label>Advance option</label>
+                <br>
+                <div id="option" style="display: none;">
+                    <input id="isTip" type="checkbox">
+                    <label for="tip">Tip</label>
+                    <input id="tipI" style="display: none;" type="number">
+                    <br>
+                    <input id="isCoupon" type="checkbox">
+                    <label for="Coupon">Coupon</label>
+                    <input id="coupI" style="display: none;" type="text">
+
+                    <br>
+                    <input id="isSplit" type="checkbox">
+                    <label for="Bill split">What to split Bill</label>
+                    <input id="person" min="1" type="number" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <footer>
+        <h1 class="center noFloat">Follow us</h1>
+        <div class="footer">
+            <div id="icon">
+                <div class="tooltip">
+                    <img src="fb_c.png" alt="fb">
+                    <!-- <img  src="fb_c.png" alt="fb"> -->
+                    <span class="tooltiptext fb">Facebook</span>
+                </div>
+                <div class="tooltip"><img src="insta_c.png" alt="insta">
+                    <span class="tooltiptext insta">Instagram</span>
+                </div>
+                <div class="tooltip"><img src="whatsapp_c.png" alt="whatsapp">
+                    <span class="tooltiptext whatsapp">Whatsapp</span>
+                </div>
+                <div class="tooltip"><img src="linkedin_c.png" alt="Linkdin">
+                    <span class="tooltiptext linkd">LinkdIn</span>
+                </div>
+                <div class="tooltip"><img src="yt_c.png" alt="yt">
+                    <span class="tooltiptext youtube">youtube</span>
+                </div>
+                <div class="tooltip"><img src="twitter_c.png" alt="twitter">
+                    <span class="tooltiptext x">Twitter</span>
+                </div>
+
+            </div>
+            <small>Copyright © 2023 | All Rights Reserved</small>
+            <br><small>web designer: <a href="https://sangamdavla.github.io/project_portfolio/portfolio.html">Dilpreet</a></small>
+
+
+            <button type="button"><a href="#up"><img src="arrow.png" alt="uparrow"></a></button>
+            <!-- fb,insta,youtube -->
+        </div>
+    </footer>
+</body>
+<script>
+
+</script>
+
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href=" favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Registration</title>
+</head>
+
+<body onload="mode()">
+    <nav>
+        <ul class="nav_left">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="menu.html">
+                    menu
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <ul class="nav_right">
+            <li>
+                <a href="cart.html">
+                    My Order
+                </a>
+            </li>
+    
+            <li>
+                <a href="login.html">Login </a>
+                <!--sign up icon-->
+            </li>
+    
+            <li class="mode">Mode
+                <div class="mode-containt">
+                    <button type="button" onclick="lightMode()">light mode</button>
+                    <button type="button" onclick="darkMode()">Dark mode</button>
+                </div>
+                </div>
+    
+        </ul>
+    </nav><div id="up"></div>
+    <div class="form_bg">
+        <div class="form_style "style=" margin-top: 150px;">
+            <h2>Registration</h2>
+            <form name="form" method="get">
+                <label>User Name</label>
+                <input name="name" type="text" placeholder="User name" id="name" />
+                <span id="userNameE"></span> <br />
+                <label>Email</label>
+                <input name="Email" type="email" placeholder="Email" id="email" />
+                <span id="userEmailE"></span><br />
+                <label>Phone Number</label><input name="userNumber " type="number" placeholder="Number" id="numb" />
+                <span id="userNumbE"></span><br />
+                <label>Your Address</label>
+                <input name="Address" type="text" id="address" placeholder="Your Address"/>
+                <span id="addE"></span><br>
+                <label>Password</label>
+                <input name="password" type="password" placeholder="Password" id="password" />
+                <span id="passE"></span><br>
+                <label>Confirm Password</label>
+                <input name="password" type="password" placeholder="Password" id="conPassword" />
+                <span id="cPassE"></span><br>
+                <button type="button" onclick="showPassword()">Show Password</button>
+                <button type="button" onclick="hidePassword()">Hide Password</button>
+                <button type="button" onclick="verifyForm()">Submit</button>
+            </form>
+        </div>
+    </div><footer>
+     <h1 class="center noFloat">Follow us</h1>
+           
+        <div class="footer">
+                <div id="icon">
+                <div class="tooltip">
+                    <img src=" fb_c.png" alt="fb">
+                    <!-- <img  src=" fb_c.png" alt="fb"> -->
+                    <span class="tooltiptext fb">Facebook</span>
+                </div>
+                <div class="tooltip"><img src=" insta_c.png" alt="insta">
+                    <span class="tooltiptext insta">Instagram</span>
+                </div>
+                <div class="tooltip"><img src=" whatsapp_c.png" alt="whatsapp">
+                    <span class="tooltiptext whatsapp">Whatsapp</span>
+                </div>
+                <div class="tooltip"><img src=" linkedin_c.png" alt="Linkdin">
+                    <span class="tooltiptext linkd">LinkdIn</span>
+                </div>
+                <div class="tooltip"><img src=" yt_c.png" alt="yt">
+                    <span class="tooltiptext youtube">youtube</span>
+                </div>
+                <div class="tooltip"><img src=" twitter_c.png" alt="twitter">
+                    <span class="tooltiptext x">Twitter</span>
+                </div>
+    
+            </div>
+            <small>Copyright © 2023 | All Rights Reserved</small>
+            <br><small>web designer: <a href="https://sangamdavla.github.io/project_portfolio/portfolio.html">Dilpreet</a></small>
+    
+    
+            <button type="button"><a href="#up"><img src="png/arrow.png" alt="uparrow"></a></button>
+            <!-- fb,insta,youtube -->
+        </div>
+    </footer>
+    </body></html>
+   

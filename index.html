@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href=" favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Shopping site</title>
+</head>
+
+<body onload="mode()">
+    <div id="up"></div>
+    <nav>
+        <ul class="nav_left">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="menu.html">
+                    menu
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <ul class="nav_right">
+            <li>
+                <a href="cart.html">
+                    My Order
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">Login </a>
+                <!--sign up icon-->
+            </li>
+
+            <li class="mode">Mode
+                <div class="mode-containt">
+                    <button type="button" onclick="lightMode()">light mode</button>
+                    <button type="button" onclick="darkMode()">Dark mode</button>
+                </div>
+                </div>
+                <!--icon of mode(dark and light)-->
+            </li>
+
+        </ul>
+    </nav>
+    <header>
+        <a class="pre" onclick="slide(-1)">&lt</a>
+        <div id="slider">
+
+        </div><a class="next_s" onclick="slide(1)">&gt</a>
+    </header>
+    <h1 class="center">Our Product</h1>
+    <main>
+        <div class="product_gallery">
+            <img src="p1.jfif" alt="product1">
+            <div class="overlay"> <button type="button" onclick="tab(1)" class="addToCart"
+                    >view product</button>
+            </div>
+
+        </div>
+        <div class="product_gallery">
+            <img src="pizza.png" alt="product2">
+            <div class="overlay"> <button type="button" class="add-to-cart" onclick="tab(0)">view product</button>
+            </div>
+
+        </div>
+        <div class="product_gallery">
+            <img src="shake.png" alt="product3">
+            <div class="overlay"> <button type="button" class="add-to-cart" onclick="tab(8)">view product</button>
+            </div>
+
+        </div>
+        <div class="product_gallery">
+            <img src="noodle.png" alt="product4">
+            <div class="overlay"> <button type="button" class="add-to-cart"  onclick="tab(6)">view product</button>
+            </div>
+
+
+        </div>
+        <div class="product_gallery">
+            <img src="sandwich.png" alt="product5">
+            <div class="overlay"> <button type="button" class="add-to-cart" onclick="tab(3)">view product</button>
+            </div>
+
+        </div>
+        <div class="product_gallery">
+            <img src="icecream.png" alt="product6">
+            <div class="overlay"> <button type="button" class="add-to-cart"  onclick="tab(11)">view product</button>
+            </div>
+
+        </div>
+    </main>
+    </div>
+    <h1 class="center noFloat">Testimonials</h1>
+    <h3 style="display: block; text-align: center;">user review</h3>
+    <hr>
+    <br>
+    <section>       
+            <div class="column  ">
+                <h2 id="rew-head">Hygienic and Safe  </h2><hr>
+                <br>
+                <p id="rew-des">I appreciate the resort's focus on hygiene and safety measures.", "I felt comfortable dining in during these challenging
+                times.  </p>
+            </div>
+
+
+
+    
+    </section><br>
+
+
+    <footer>
+        <h1 class="center noFloat">Follow us</h1>
+        <div class="footer">
+            <div id="icon">
+                <div class="tooltip">
+                    <img src="  fb_c.png" alt="fb">
+                    <!-- <img  src="  fb_c.png" alt="fb"> -->
+                    <span class="tooltiptext fb">Facebook</span>
+                </div>
+                <div class="tooltip"><img src="insta_c.png" alt="insta">
+                    <span class="tooltiptext insta">Instagram</span>
+                </div>
+                <div class="tooltip"><img src="whatsapp_c.png" alt="whatsapp">
+                    <span class="tooltiptext whatsapp">Whatsapp</span>
+                </div>
+                <div class="tooltip"><img src="linkedin_c.png" alt="Linkdin">
+                    <span class="tooltiptext linkd">LinkdIn</span>
+                </div>
+                <div class="tooltip"><img src="yt_c.png" alt="yt">
+                    <span class="tooltiptext youtube">youtube</span>
+                </div>
+                <div class="tooltip"><img src="twitter_c.png" alt="twitter">
+                    <span class="tooltiptext x">Twitter</span>
+                </div>
+
+            </div>
+            <small>Copyright © 2023 | All Rights Reserved</small>
+            <br><small>web designer: <a href="https://sangamdavla.github.io/project_portfolio/portfolio.html">Dilpreet</a></small>
+
+
+            <button type="button"><a href="#up"><img src="arrow.png" alt="uparrow"></a></button>
+            <!-- fb,insta,youtube -->
+        </div>
+    </footer>
+
+</body>
+
+</html>
